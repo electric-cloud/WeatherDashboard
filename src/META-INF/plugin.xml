@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<plugin>
+  <key>HudsonDashboard</key>
+  <version>1.0</version>
+  <label>Hudson Dashboard</label>
+  <description>Creates a dashboard that mirrors the look of the Hudson homepage</description>
+  
+
+	<!--	<configure>hudsondashboard.xml</configure>
+	-->
+  
+  <vendor>Electric Cloud</vendor>
+  <depends>EC-Core</depends>
+</plugin>

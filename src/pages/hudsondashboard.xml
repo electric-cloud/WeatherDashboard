@@ -1,0 +1,30 @@
+<componentContainer>
+  <table width="100%">
+    <tr>
+      <td valign="top" width="50%">
+        <h1>Most Recent Builds</h1>
+        <component plugin="EC-Core" ref="urlLoader">
+          <style>../../lib/styles/data.css</style>
+          <style>../../styles/JobStatus.css</style>
+          <plugin>HudsonDashboard</plugin>
+          <version>1.0</version>
+          <url>cgi-bin/hudson.cgi</url>
+          <requests>
+            <request requestId="successJobs">
+              <findObjects>
+                <objectType>job</objectType>
+                <sort>
+                  <propertyName>createTime</propertyName>
+                  <order>descending</order>
+                </sort>
+                <maxIds>200</maxIds>
+                <numObjects>200</numObjects>
+              </findObjects>
+            </request>
+          </requests>
+        </component>
+      </td>
+    </tr>
+  </table>
+</componentContainer>
+
